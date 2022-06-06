@@ -1,2 +1,3 @@
-# alert-box
-A simple alert box built with JQuery
+# Alert Box
+
+A simple alert box built with JQuery.
