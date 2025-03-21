@@ -8,8 +8,7 @@ body {
 .wrapper {
     width: 75%;
     max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 h1 {
@@ -52,6 +51,6 @@ span.close {
     padding: 10px;
 }
 
-span:hover {
+span.close:hover {
     cursor: pointer;
 }
