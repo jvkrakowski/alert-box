@@ -1,9 +1,24 @@
-window.onload = function () {
-    $('.close').click(function () { // select menu-button
-        $('.alert').hide(); // expands menu
-    });
+class AlertBox {
+    constructor(selector) {
+        this.alertBox = $(selector);
+        this.closeButton = this.alertBox.find('.close');
+        this.init();
+    }
 
-    $('.show-alert').click(function () { // select menu-button
-        $('.alert').toggle(); // expands menu
-    });
-};
+    init() {
+        this.closeButton.click(() => this.hide());
+        $('.show-alert').click(() => this.toggle());
+    }
+
+    show() {
+        this.alertBox.show();
+    }
+
+    hide() {
+        this.alertBox.hide();
+    }
+
+    toggle() {
+        this.alertBox.toggle();
+    }
+}
