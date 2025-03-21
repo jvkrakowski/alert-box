@@ -16,13 +16,19 @@
 <body>
 
     <div class="wrapper">
-        <div class="alert">
-            <p>Testing</p>
+        <div class="alert" data-alert-id="1">
+            <p>Alert 1</p>
+            <span class="close">X</span>
+        </div>
+        <div class="alert" data-alert-id="2">
+            <p>Alert 2</p>
             <span class="close">X</span>
         </div>
         <h1>Alert &mdash; Demo</h1>
         <p>A simple alert box built with Jquery. Refresh page to bring the alert back.</p>
-        <a class="show-alert" href="#">Show Alert</a>
+        <a class="show-alert" href="#" data-show-alert="1">Show Alert 1</a>
+        <a class="show-alert" href="#" data-show-alert="2">Show Alert 2</a>
     </div>
 </body>
 </html>
+
