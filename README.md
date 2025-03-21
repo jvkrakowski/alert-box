@@ -111,39 +111,6 @@ You can customize the appearance of the alert box by modifying the `style.css` f
 
 You can also customize the behavior of the alert box by modifying the `alert-box.js` file. For example, you can change the animation speed or add additional functionality when the alert box is shown or hidden.
 
-### Example of Customizing Alert Box
-
-```javascript
-class AlertBox {
-    constructor(selector) {
-        this.alertBox = $(selector);
-        this.closeButton = this.alertBox.find('.close');
-        this.init();
-    }
-
-    init() {
-        this.closeButton.click(() => this.hide());
-        $('.show-alert').click(() => this.toggle());
-    }
-
-    show() {
-        this.alertBox.show();
-    }
-
-    hide() {
-        this.alertBox.hide();
-    }
-
-    toggle() {
-        this.alertBox.toggle();
-    }
-}
-
-$(document).ready(function () {
-    const alertBox = new AlertBox('.alert');
-});
-```
-
 ## Contributing
 
 We welcome contributions to improve the Alert Box! If you have suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
