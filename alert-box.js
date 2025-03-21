@@ -22,3 +22,7 @@ class AlertBox {
         this.alertBox.toggle();
     }
 }
+
+$(document).ready(function () {
+    const alertBox = new AlertBox('.alert');
+});
